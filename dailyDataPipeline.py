@@ -280,9 +280,9 @@ def run_pipeline(
 
 if __name__ == "__main__":
     start_time = time.time()  # 开始计时
-    current_dir = os.getcwd()
-    print(f"Directory tree for: {current_dir}")
-    print_directory_tree(current_dir)
+    # current_dir = os.getcwd()
+    # print(f"Directory tree for: {current_dir}")
+    # print_directory_tree(current_dir)
 
     clean_cache_folder("Cache")
     run_pipeline(
