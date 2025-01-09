@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: pykoda
+Version: 0.2
+Home-page: https://gitlab.com/savanticab/projects/vinnova/koda
+Author: David Menéndez Hurtado, Leyla Isaeva, and Samuel Lampa
+Author-email: david@savantic.se
+License: BSD-3 clause
+Classifier: Programming Language :: Python
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Information Technology
+Classifier: Topic :: Scientific/Engineering :: GIS
+Classifier: License :: OSI Approved :: BSD
+License-File: LICENSE
+Requires-Dist: appdirs
+Requires-Dist: requests
+Requires-Dist: ey!=0.3.1,>=0.3.0
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: pyarrow
+Requires-Dist: scipy
+Requires-Dist: cartopy
+Requires-Dist: geopandas
+Requires-Dist: matplotlib
+Requires-Dist: protobuf
+Requires-Dist: tqdm
+Requires-Dist: joblib
+Requires-Dist: geopy~=2.0.0
+Requires-Dist: networkx
