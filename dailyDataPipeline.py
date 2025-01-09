@@ -16,6 +16,20 @@ import time
 import shutil
 
 
+def print_directory_tree(root_dir, indent_level=0):
+    """递归打印文件和文件夹树结构"""
+    # 获取当前目录下的所有文件和文件夹
+    items = os.listdir(root_dir)
+    
+    for item in items:
+        item_path = os.path.join(root_dir, item)
+        # 打印当前文件或文件夹
+        print("  " * indent_level + f"|- {item}")
+        # 如果是文件夹，则递归调用
+        if os.path.isdir(item_path):
+            print_directory_tree(item_path, indent_level + 1)
+
+
 def clean_cache_folder(folder_name: str):
     """
     如果指定文件夹存在，则删除该文件夹下的所有内容（文件与子文件夹）。
@@ -266,6 +280,9 @@ def run_pipeline(
 
 if __name__ == "__main__":
     start_time = time.time()  # 开始计时
+    current_dir = os.getcwd()
+    print(f"Directory tree for: {current_dir}")
+    print_directory_tree(current_dir)
 
     clean_cache_folder("Cache")
     run_pipeline(
