@@ -33,10 +33,10 @@ jobs: # 当前workflow中的所有任务
     - name: Install 7z
       run: sudo apt-get update && sudo apt-get install -y p7zip-full
 
-    # - name: install pykoda
-    #   run: |
-    #     cd ML_Proj/pykoda
-    #     python setup.py install
+    - name: install pykoda
+      run: |
+        cd pykoda
+        python setup.py install
         
     - name: install python packages
       run: |
