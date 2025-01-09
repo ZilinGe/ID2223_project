@@ -8,7 +8,7 @@ scipy
 cartopy
 geopandas
 matplotlib
-protobuf
+protobuf==3.20.*
 tqdm
 joblib
 geopy~=2.0.0
