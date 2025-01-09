@@ -36,7 +36,8 @@ jobs: # 当前workflow中的所有任务
     - name: install pykoda
       run: |
         cd pykoda
-        python setup.py install
+        pip install -r requirements.txt
+        pip install -e .
         
     - name: install python packages
       run: |
