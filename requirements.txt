@@ -2,7 +2,6 @@ numpy
 pandas
 scikit-learn
 requests
-pykoda
 appdirs
 tqdm
 joblib
