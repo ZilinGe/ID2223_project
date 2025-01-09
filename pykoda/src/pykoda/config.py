@@ -24,7 +24,8 @@ CACHE_DIR = os.path.join(CALLER_DIR, 'Cache')
 os.makedirs(CACHE_DIR, exist_ok=True)  # 创建 'Cache' 文件夹
 
 N_CPU = int(config_data.get('n_cpu', -1))
-API_KEY = config_data.get('api_key', '')
+# API_KEY = config_data.get('api_key', '')
+API_KEY ='QAPa2RrHSDk1RmvET_kM3gVDFMJgthKICkKukKRFCPQ'
 if not API_KEY:
     _msg = f'Config file {CONFIG_FILE} is missing the api key, please specify the parameter "api_key".' \
            'Falling back to v1 of the API for download.'
